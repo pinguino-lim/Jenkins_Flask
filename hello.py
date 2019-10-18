@@ -1,9 +1,9 @@
-from flask import Flask
-app = Flask(__name__)
+import flask
 
-@app.route("/")
-    def hello():
-        return "Hello World!"
+app = flask.Flask(__name__)
 
-if __name__ == "__main__":
-    app.run()
+@app.route('/hello')
+def helloIndex():
+    return 'Hello World from Python Flask!'
+
+app.run(host='0.0.0.0', port= 5000)
