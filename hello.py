@@ -6,4 +6,4 @@ app = flask.Flask(__name__)
 def helloIndex():
     return 'Hello World from Python Flask!'
 
-app.run(host='0.0.0.0', port= 5000)
+app.run(host='0.0.0.0', port= 3000)
